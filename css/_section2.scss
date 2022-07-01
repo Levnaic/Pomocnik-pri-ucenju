@@ -1,0 +1,19 @@
+.visible {
+  visibility: visible !important;
+  transform: translateY(0) !important;
+  transition: 0.5s;
+}
+
+#section-2 {
+  padding: $mainPadding;
+  transform: translateY(+60px);
+  visibility: hidden;
+  @include flexCenter(column);
+  .prikazRezultata__section {
+    @include flexCenter(row);
+    gap: 6px;
+    p {
+      font-size: 22px;
+    }
+  }
+}

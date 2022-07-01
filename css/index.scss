@@ -1,0 +1,18 @@
+@import './variables';
+@import './section1';
+@import './section2';
+
+body {
+  margin: 0;
+  background-color: $mainColor;
+  color: $textColor;
+}
+
+.headline {
+  @include flexCenter(column);
+  h1 {
+    font-size: $headlineFs;
+  }
+}
+
+/*section 2*/

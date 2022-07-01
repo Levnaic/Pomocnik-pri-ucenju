@@ -1,0 +1,32 @@
+$mainColor: #1a2238;
+$secondaryColor: #9daaf2;
+$textColor: #f4db7d;
+$secondaryTextColor: #ff6a3d;
+$mainPadding: 0 10%;
+$headlineFs: 60px;
+
+@mixin flexCenter($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin btnFirst {
+  background-color: $secondaryTextColor;
+  width: 170px;
+  height: 60px;
+  border-radius: 40px;
+  border: none;
+  color: $mainColor;
+  font-size: 16px;
+  cursor: pointer;
+  &:hover {
+    background-color: $mainColor;
+    color: $secondaryTextColor;
+    border: 1px solid $secondaryTextColor;
+  }
+  &:active {
+    transform: scale(0.95);
+  }
+}

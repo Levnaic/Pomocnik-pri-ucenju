@@ -1,0 +1,42 @@
+#section-1 {
+  padding: $mainPadding;
+}
+form {
+  @include flexCenter(column);
+  gap: 40px;
+  label {
+    font-size: 24px;
+  }
+  .formSection {
+    @include flexCenter(column);
+    gap: 20px;
+    input {
+      width: 300px;
+      height: 40px;
+      padding: 0 15px;
+      background-color: $secondaryColor;
+      color: $mainColor;
+      font-size: 15px;
+      &:focus {
+        outline: none;
+      }
+    }
+    /*ostali pretrazivaci*/
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    /*mozila*/
+    input[type='number'] {
+      -moz-appearance: textfield;
+    }
+  }
+  .formBtns {
+    display: flex;
+    gap: 20px;
+    input[type='button'] {
+      @include btnFirst();
+    }
+  }
+}

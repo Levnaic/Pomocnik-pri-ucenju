@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Ucenjak</title>
+  </head>
+  <body>
+    <nav></nav>
+    <section class="headline">
+      <h1>Ucenjak</h1>
+    </section>
+    <section id="section-1">
+      <form>
+        <div class="formSection">
+          <label for="strana">Koliko strana imas da naucis?</label>
+          <input type="number" id="strana" />
+        </div>
+        <div class="formSection">
+          <label for="datum">Kog datuma je ispit?</label>
+          <input type="date" id="datum" />
+        </div>
+        <div class="formBtns">
+          <input type="button" id="formBtn" value="Unesi podatke" />
+          <input type="button" id="restart" value="Ponovi unos" />
+        </div>
+      </form>
+    </section>
+    <section id="section-2">
+      <div class="prikazRezultata">
+        <div class="prikazRezultata__section">
+          <p>Ostalo dana za ucenje:</p>
+          <p id="ostaloDana"></p>
+        </div>
+        <div class="prikazRezultata__section">
+          <p>Strana da se uci po danu:</p>
+          <p id="stranaPoDanu"></p>
+        </div>
+      </div>
+    </section>
+    <script src="js/script.js"></script>
+  </body>
+</html>
